@@ -66,3 +66,30 @@ footer {
   font-size: 14px;
   color: #888;
 }
+
+.social-icons {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  filter: invert(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: invert(70%) sepia(100%) saturate(500%) hue-rotate(180deg);
+}
